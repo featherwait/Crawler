@@ -141,9 +141,9 @@ def main():
     process_csv("mianyang_weather.csv")
     # 对爬取的天气数据SCV文件进行处理
     plot_temperature_curve('mianyang_weather_new.csv',201201,201203,True)
-    #plot_temperature_curve('mianyang_weather_new.csv',201201,201203,False)
+    plot_temperature_curve('mianyang_weather_new.csv',201201,201203,False)
     # 一般是某一季度的温度？
-    #plot_weather_category_pie('mianyang_weather_new.csv',201201,201212,'天气白天')
+    plot_weather_category_pie('mianyang_weather_new.csv',201201,201212,'天气白天')
     plot_weather_category_pie('mianyang_weather_new.csv',201201,201212,'天气夜晚')
 
 if __name__ == "__main__":
